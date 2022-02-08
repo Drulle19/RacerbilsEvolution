@@ -4,8 +4,13 @@ class CarController {
   Car bil                    = new Car();
   NeuralNetwork hjerne       = new NeuralNetwork(varians); 
   SensorSystem  sensorSystem = new SensorSystem();
+  float score = 0;
       
   void update() {
+    color c = get(int(bil.pos.x),int(bil.pos.y));
+    if(c == color(255,255,255)){
+      
+    }
     //1.)opdtarer bil 
     bil.update();
     //2.)opdaterer sensorer    

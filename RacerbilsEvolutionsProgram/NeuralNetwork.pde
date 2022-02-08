@@ -14,10 +14,10 @@ class NeuralNetwork {
     // layer 2, 1 output neuron : b3_1=b[2]
   
   NeuralNetwork(float varians){
-    for(int i=0; i < weights.length -1; i++){
+    for(int i=0; i < weights.length; i++){
       weights[i] = random(-varians,varians);
     }
-    for(int i=0; i < biases.length -1; i++){
+    for(int i=0; i < biases.length; i++){
       biases[i] = random(-varians,varians);
     }    
   }

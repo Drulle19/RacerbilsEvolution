@@ -10,6 +10,10 @@ class CarSystem {
       CarControllerList.add(controller);
     }
   }
+  
+  CarSystem(CarSystem C){
+    
+  }
 
   void updateAndDisplay() {
     //1.) Opdaterer sensorer og bilpositioner
